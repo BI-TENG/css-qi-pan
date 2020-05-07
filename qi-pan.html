@@ -41,7 +41,31 @@
       position: relative;
     }
 
+    /* ---------------------外文字------------------------- */
+    .text {
+      width: 1000px;
+      height: 950px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
 
+    }
+
+    .text1 {
+      font-size: 45px;
+      width: 50px;
+      height: 900px;
+      text-align: center;
+      line-height: 50px;
+      writing-mode: vertical-rl
+    }
 
     /* ---------------------格子------------------------- */
     .small {
@@ -153,10 +177,10 @@
 </head>
 
 <body>
-
-
-
-
+  <div class="text">
+    <div class="text1">棋盤裡　車無輪　馬無韁　叫聲將軍堤防堤防</div>
+    <div class="text1">圖畫裡　龍不吟　虎不嘯　小小書僮可笑可笑</div>
+  </div>
 
   <div class="top-group1">
     <div class="circle1">車</div>
