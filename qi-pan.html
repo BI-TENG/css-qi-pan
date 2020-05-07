@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      font-family: 微軟正黑體;
+      font-family: 華康正顏楷體;
       box-sizing: border-box;
     }
 
@@ -18,6 +18,7 @@
     html {
       height: 100%;
     }
+
 
     body {
       display: flex;
@@ -29,6 +30,7 @@
       width: 820px;
       height: 900px;
       border: 1px solid black;
+      background: #704214;
       padding: 50px;
       display: flex;
       flex-wrap: wrap;
@@ -36,23 +38,16 @@
       justify-content: center;
       /* 次軸 */
       align-content: center;
-    }
-
-    .text {
-      width: 1100px;
-      height: 950px;
-      border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+      position: relative;
     }
 
 
+
+    /* ---------------------格子------------------------- */
     .small {
       width: 87.5px;
       height: 87.5px;
-      border: 1px solid black;
+      border: 1px solid #FFA500;
       display: flex;
       justify-content: space-around;
     }
@@ -65,89 +60,227 @@
       text-align: center;
     }
 
+    /* ---------------------分界線------------------------- */
     #row {
       width: 700px;
-      background: white;
+      color: #FFA500;
+      background: #704214;
+    }
+
+    /* ---------------------上半象棋------------------------- */
+    .circle1 {
+      font-size: 35px;
+      font-weight: bolder;
+      text-align: center;
+      line-height: 60px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid black;
+      background: #FFE4C4;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .top-group1 {
+      width: 760px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      z-index: 1;
+      top: 6.5%;
+    }
+
+    .top-group2 {
+      width: 700px;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      z-index: 1;
+      top: 23.5%;
+    }
+
+    .top-group3 {
+      width: 880px;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      z-index: 1;
+      top: 33%;
+    }
+
+    /* ---------------------下半象棋------------------------- */
+    .circle2 {
+      font-size: 35px;
+      font-weight: bolder;
+      color: red;
+      text-align: center;
+      line-height: 60px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 1px solid black;
+      background: #FFE4C4;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .bottom-group1 {
+      width: 760px;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      z-index: 1;
+      bottom: 6.5%;
+    }
+
+    .bottom-group2 {
+      width: 700px;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      z-index: 1;
+      bottom: 25%;
+    }
+
+    .bottom-group3 {
+      width: 880px;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      z-index: 1;
+      bottom: 33%;
     }
   </style>
 </head>
 
 <body>
-  <div class="text">
 
 
 
-    <div class="big">
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div id="row" class="small">
-        <div class="small2">楚河</div>
-        <div class="small2">漢界</div>
-      </div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-      <div class="small"></div>
-    </div>
+
+
+  <div class="top-group1">
+    <div class="circle1">車</div>
+    <div class="circle1">馬</div>
+    <div class="circle1">象</div>
+    <div class="circle1">士</div>
+    <div class="circle1">將</div>
+    <div class="circle1">士</div>
+    <div class="circle1">象</div>
+    <div class="circle1">馬</div>
+    <div class="circle1">車</div>
   </div>
+
+  <div class="top-group2">
+    <div class="circle1">包</div>
+    <div class="circle1">包</div>
+  </div>
+
+  <div class="top-group3">
+    <div class="circle1">卒</div>
+    <div class="circle1">卒</div>
+    <div class="circle1">卒</div>
+    <div class="circle1">卒</div>
+    <div class="circle1">卒</div>
+  </div>
+
+
+
+  <div class="bottom-group1">
+    <div class="circle2">俥</div>
+    <div class="circle2">傌</div>
+    <div class="circle2">相</div>
+    <div class="circle2">仕</div>
+    <div class="circle2">帥</div>
+    <div class="circle2">仕</div>
+    <div class="circle2">相</div>
+    <div class="circle2">傌</div>
+    <div class="circle2">俥</div>
+  </div>
+
+  <div class="bottom-group2">
+    <div class="circle2">炮</div>
+    <div class="circle2">炮</div>
+  </div>
+
+  <div class="bottom-group3">
+    <div class="circle2">兵</div>
+    <div class="circle2">兵</div>
+    <div class="circle2">兵</div>
+    <div class="circle2">兵</div>
+    <div class="circle2">兵</div>
+  </div>
+
+  <div class="big">
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small" style="background-image: linear-gradient(45deg,#704214 48%,#FFA500 49%,#704214 50%);"></div>
+    <div class="small" style="background-image: linear-gradient(-45deg,#704214 48%,#FFA500 49%,#704214 50%);"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small" style="background-image: linear-gradient(-45deg,#704214 48%,#FFA500 49%,#704214 50%);"></div>
+    <div class="small" style="background-image: linear-gradient(45deg,#704214 48%,#FFA500 49%,#704214 50%);"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div id="row" class="small">
+      <div class="small2">楚河</div>
+      <div class="small2">漢界</div>
+    </div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small" style="background-image: linear-gradient(45deg,#704214 48%,#FFA500 49%,#704214 50%);"></div>
+    <div class="small" style="background-image: linear-gradient(-45deg,#704214 48%,#FFA500 49%,#704214 50%);"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small" style="background-image: linear-gradient(-45deg,#704214 48%,#FFA500 49%,#704214 50%);"></div>
+    <div class="small" style="background-image: linear-gradient(45deg,#704214 48%,#FFA500 49%,#704214 50%);"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+    <div class="small"></div>
+  </div>
+
 </body>
 
 </html>
